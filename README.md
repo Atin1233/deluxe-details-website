@@ -83,15 +83,13 @@
 </tr>
 </table>
 
-### 🎨 Design System
+### Font Setup
 
-| Element | Value | Description |
-|---------|-------|-------------|
-| 🖤 Primary | `#000000` | Pitch Black background |
-| 🤍 Secondary | `#FFFFFF` | Pure White text |
-| 💙 Accent | `#3B82F6` | Kinetic Blue highlights |
-| 📝 Display Font | Harmond | Artistic serifs for headlines |
-| 📝 Body Font | Nohemi | Neo-grotesque for UI/text |
+The project uses **Google Fonts** as fallbacks for optimal performance:
+- **Display**: Playfair Display (serif, elegant headlines)
+- **Body**: Inter (neo-grotesque, excellent readability)
+
+To use custom fonts, add your font files to the respective folders and update `app/layout.tsx` as described in the customization guide.
 
 ---
 
