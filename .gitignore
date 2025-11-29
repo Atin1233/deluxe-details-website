@@ -34,8 +34,8 @@ yarn-error.log*
 next-env.d.ts
 
 # Font folders (keep these but don't track them if you have your own)
-# /Nohemi/
-# /Harmond-Free-For-Personal-Use/
+Nohemi/
+Harmond-Free-For-Personal-Use/
 
 # Component reference (not needed in production)
 componenets-to-use/
