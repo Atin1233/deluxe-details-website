@@ -23,10 +23,11 @@ module.exports = {
           800: '#2e2e2e',
           900: '#333333',
         },
-        // Accent colors
+        // Accent colors - Royal Blue / Cyan Gradient
         accent: {
+          blue: '#0066FF',
+          cyan: '#00D4FF',
           orange: '#FF6B35',
-          blue: '#3B82F6',
           silver: '#C0C0C0',
         },
       },
@@ -62,7 +63,7 @@ module.exports = {
         'glow-sm': '0 0 10px rgba(255, 255, 255, 0.1)',
         'glow-md': '0 0 20px rgba(255, 255, 255, 0.15)',
         'glow-lg': '0 0 40px rgba(255, 255, 255, 0.2)',
-        'glow-accent': '0 0 30px rgba(59, 130, 246, 0.3)',
+        'glow-accent': '0 0 30px rgba(0, 102, 255, 0.4), 0 0 60px rgba(0, 212, 255, 0.2)',
       },
       transitionTimingFunction: {
         'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',

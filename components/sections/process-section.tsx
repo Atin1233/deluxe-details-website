@@ -7,29 +7,29 @@ export function ProcessSection() {
   const timelineData = [
     {
       title: "01",
-      date: "Discovery",
+      date: "Book",
       content: (
         <div className="space-y-4">
           <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Understanding Your Vision
+            Schedule Your Service
           </h4>
           <p className="font-nohemi text-base text-white/60 max-w-lg">
-            Every great project starts with deep understanding. I dive into your
-            goals, audience, and requirements to craft a strategic foundation
-            that ensures success.
+            Contact us by phone or email to schedule your appointment. We'll
+            confirm your location, preferred time, and service package. It's
+            that simple!
           </p>
           <ul className="space-y-2 font-nohemi text-sm text-white/50">
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Research & Analysis
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Call or email to book
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Competitive Audit
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Choose your service package
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              User Journey Mapping
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Confirm location & time
             </li>
           </ul>
         </div>
@@ -37,29 +37,29 @@ export function ProcessSection() {
     },
     {
       title: "02",
-      date: "Design",
+      date: "Arrive",
       content: (
         <div className="space-y-4">
           <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Crafting the Experience
+            We Come to You
           </h4>
           <p className="font-nohemi text-base text-white/60 max-w-lg">
-            Using Swiss design principles and modern aesthetics, I create
-            wireframes and high-fidelity designs that balance beauty with
-            functionality.
+            Our fully-equipped mobile unit arrives at your location at the
+            scheduled time. No need to leave your home or office—we bring
+            everything needed for a professional detail.
           </p>
           <ul className="space-y-2 font-nohemi text-sm text-white/50">
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Wireframing & Prototyping
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Mobile unit arrives on time
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Visual Design System
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              All equipment & products included
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Motion Design
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Professional setup in minutes
             </li>
           </ul>
         </div>
@@ -67,29 +67,29 @@ export function ProcessSection() {
     },
     {
       title: "03",
-      date: "Development",
+      date: "Detail",
       content: (
         <div className="space-y-4">
           <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Building with Precision
+            Expert Detailing Service
           </h4>
           <p className="font-nohemi text-base text-white/60 max-w-lg">
-            Clean, performant code is the backbone of every project. I use
-            modern frameworks and best practices to build experiences that are
-            fast, accessible, and scalable.
+            Our trained technicians work meticulously to clean, protect, and
+            restore your vehicle using premium products and professional
+            techniques. Every detail matters.
           </p>
           <ul className="space-y-2 font-nohemi text-sm text-white/50">
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              React & Next.js Development
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Thorough cleaning & protection
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Three.js & WebGL Integration
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Premium eco-friendly products
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Performance Optimization
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Attention to every detail
             </li>
           </ul>
         </div>
@@ -97,29 +97,29 @@ export function ProcessSection() {
     },
     {
       title: "04",
-      date: "Launch",
+      date: "Enjoy",
       content: (
         <div className="space-y-4">
           <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Delivering Excellence
+            Your Shine Awaits
           </h4>
           <p className="font-nohemi text-base text-white/60 max-w-lg">
-            A successful launch is just the beginning. I ensure smooth
-            deployment, comprehensive testing, and ongoing support to keep your
-            project running flawlessly.
+            Once complete, we'll show you the results and ensure you're
+            completely satisfied. Your vehicle will look like new, and you can
+            enjoy the convenience of having it done at your location.
           </p>
           <ul className="space-y-2 font-nohemi text-sm text-white/50">
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Quality Assurance
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Final inspection & walkthrough
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Deployment & CI/CD
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Satisfaction guaranteed
             </li>
             <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Ongoing Maintenance
+              <span className="w-1 h-1 rounded-full bg-accent-cyan" />
+              Easy payment & booking for next time
             </li>
           </ul>
         </div>
@@ -133,21 +133,26 @@ export function ProcessSection() {
       className="relative min-h-screen w-full py-32 md:py-48 bg-black"
     >
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent-blue/[0.02] to-transparent" />
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-20"
+        style={{
+          background: 'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 70%)',
+        }}
+      />
 
       <div className="swiss-container relative z-10">
         {/* Section header */}
         <div className="mb-16 md:mb-24 max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
           <div>
             <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
-              How I Work
+              How We Work
             </span>
             <h2 className="font-harmond text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
-              Process
+              Our Process
             </h2>
             <p className="font-nohemi text-lg text-white/50 max-w-xl">
-              A refined methodology that ensures every project is delivered with
-              the highest quality and attention to detail.
+              A simple, streamlined process that ensures your vehicle receives
+              the premium care it deserves.
             </p>
           </div>
         </div>

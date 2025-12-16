@@ -36,15 +36,13 @@ const GlowText = memo(function GlowText({
 });
 
 export function AboutSection() {
-  const skills = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Three.js",
-    "WebGL",
-    "Framer Motion",
-    "Node.js",
-    "Tailwind CSS",
+  const features = [
+    "Mobile Service",
+    "Premium Products",
+    "Expert Technicians",
+    "Eco-Friendly",
+    "Satisfaction Guaranteed",
+    "Flexible Scheduling",
   ];
 
   return (
@@ -60,19 +58,19 @@ export function AboutSection() {
           {/* Section label */}
           <div className="col-span-4 md:col-span-2 lg:col-span-3 mb-12 md:mb-0">
             <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40">
-              About
+              About Us
             </span>
-            <div className="mt-4 w-12 h-px bg-white/20" />
+            <div className="mt-4 w-12 h-px bg-gradient-to-r from-accent-blue to-accent-cyan" />
           </div>
 
           {/* Main content */}
           <div className="col-span-4 md:col-span-6 lg:col-span-9">
-            {/* Encrypted header */}
+            {/* Header */}
             <h2 className="font-harmond text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-8">
               <EncryptedText
-                text="The Creative Mind"
+                text="Premium Mobile Detailing"
                 encryptedClassName="text-white/30"
-                revealedClassName="text-white"
+                revealedClassName="bg-gradient-to-r from-white via-accent-cyan to-accent-blue bg-clip-text text-transparent"
                 revealDelayMs={40}
               />
             </h2>
@@ -80,39 +78,43 @@ export function AboutSection() {
             {/* Bio paragraphs */}
             <div className="space-y-6 font-nohemi text-lg md:text-xl leading-relaxed text-white/60 max-w-3xl">
               <p>
-                I&apos;m a creative developer passionate about building{" "}
-                <GlowText className="text-white">
-                  exceptional digital experiences
-                </GlowText>{" "}
-                that push the boundaries of what&apos;s possible on the web.
+                At <GlowText className="text-white">Deluxe Details</GlowText>, we bring
+                professional car detailing services directly to your location in Central New Jersey.
+                No need to drive anywhere—we come to you with all the equipment and premium products
+                needed to make your vehicle shine.
               </p>
 
               <p>
-                My approach combines{" "}
-                <GlowText className="text-white">Swiss design principles</GlowText>{" "}
-                with cutting-edge technology to create work that&apos;s both
-                beautiful and performant.
+                Our team of expert technicians uses{" "}
+                <GlowText className="text-white">premium products and eco-friendly solutions</GlowText>{" "}
+                to deliver exceptional results. From full detail packages to quick exterior washes,
+                we offer flexible services tailored to your needs.
+              </p>
+
+              <p>
+                Experience the convenience of mobile detailing with the quality you deserve.
+                Your car, your schedule, our expertise.
               </p>
             </div>
 
-            {/* Skills grid */}
+            {/* Features grid */}
             <div className="mt-16">
               <h3 className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 mb-6">
-                Technologies
+                Why Choose Us
               </h3>
               <div className="flex flex-wrap gap-3">
-                {skills.map((skill) => (
+                {features.map((feature) => (
                   <span
-                    key={skill}
+                    key={feature}
                     className={cn(
-                      "px-4 py-2 rounded-full border border-white/10 bg-white/5",
+                      "px-4 py-2 rounded-full border border-accent-blue/30 bg-accent-blue/5",
                       "font-nohemi text-sm text-white/70",
-                      "hover:border-white/30 hover:bg-white/10 hover:text-white",
+                      "hover:border-accent-cyan/50 hover:bg-accent-cyan/10 hover:text-white",
                       "transition-all duration-300"
                     )}
                     data-cursor-hover
                   >
-                    {skill}
+                    {feature}
                   </span>
                 ))}
               </div>
@@ -121,13 +123,21 @@ export function AboutSection() {
             {/* Stats */}
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { value: "5+", label: "Years Experience" },
-                { value: "50+", label: "Projects Completed" },
-                { value: "30+", label: "Happy Clients" },
-                { value: "∞", label: "Cups of Coffee" },
+                { value: "100%", label: "Satisfaction" },
+                { value: "Mobile", label: "Service" },
+                { value: "Premium", label: "Products" },
+                { value: "24/7", label: "Booking" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center md:text-left">
-                  <div className="font-harmond text-4xl md:text-5xl font-bold text-white">
+                  <div 
+                    className="font-harmond text-4xl md:text-5xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #00d4ff 0%, #0066ff 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
                     {stat.value}
                   </div>
                   <div className="font-nohemi text-xs uppercase tracking-widest text-white/40 mt-2">

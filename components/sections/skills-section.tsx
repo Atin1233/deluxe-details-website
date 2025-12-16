@@ -47,7 +47,7 @@ const SkillCard = memo(function SkillCard({
         >
           <div className="relative flex flex-1 flex-col justify-between gap-4">
             {/* Icon */}
-            <div className="w-fit rounded-xl border border-white/10 bg-white/5 p-3">
+            <div className="w-fit rounded-xl border border-accent-cyan/30 bg-accent-cyan/10 p-3">
               {icon}
             </div>
 
@@ -68,53 +68,53 @@ const SkillCard = memo(function SkillCard({
 });
 
 export function SkillsSection() {
-  const skills = [
+  const services = [
     {
       area: "md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]",
-      icon: <IconCode className="h-6 w-6 text-accent-blue" />,
-      title: "Frontend Development",
+      icon: <IconRocket className="h-6 w-6 text-accent-cyan" />,
+      title: "Mobile Service",
       description:
-        "Building performant, accessible web applications with React, Next.js, and TypeScript.",
+        "We come to you! Our fully-equipped mobile unit brings professional detailing directly to your home or office in Central New Jersey.",
     },
     {
       area: "md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]",
-      icon: <IconPalette className="h-6 w-6 text-accent-blue" />,
-      title: "UI/UX Design",
+      icon: <IconPalette className="h-6 w-6 text-accent-cyan" />,
+      title: "Premium Products",
       description:
-        "Creating intuitive interfaces with a focus on user experience and modern aesthetics.",
+        "We use only the finest, eco-friendly products and professional-grade equipment to ensure the best results for your vehicle.",
     },
     {
       area: "md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]",
-      icon: <IconBrandThreejs className="h-6 w-6 text-accent-blue" />,
-      title: "3D & WebGL",
+      icon: <IconCode className="h-6 w-6 text-accent-cyan" />,
+      title: "Expert Technicians",
       description:
-        "Crafting immersive 3D experiences with Three.js, React Three Fiber, and custom shaders.",
+        "Our trained professionals have years of experience and attention to detail, ensuring your vehicle receives the care it deserves.",
     },
     {
       area: "md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]",
-      icon: <IconDeviceLaptop className="h-6 w-6 text-accent-blue" />,
-      title: "Responsive Design",
+      icon: <IconDeviceLaptop className="h-6 w-6 text-accent-cyan" />,
+      title: "Flexible Scheduling",
       description:
-        "Ensuring flawless experiences across all devices and screen sizes.",
+        "Book at your convenience. We offer flexible scheduling to fit your busy lifestyle—weekdays, weekends, and evenings available.",
     },
     {
       area: "md:[grid-area:3/1/4/7] xl:[grid-area:2/8/3/10]",
-      icon: <IconRocket className="h-6 w-6 text-accent-blue" />,
-      title: "Performance",
-      description: "Optimizing for 60fps animations and sub-second load times.",
+      icon: <IconApiApp className="h-6 w-6 text-accent-cyan" />,
+      title: "Eco-Friendly",
+      description: "We care about the environment. Our products are biodegradable and water-efficient, protecting both your car and the planet.",
     },
     {
       area: "md:[grid-area:3/7/4/13] xl:[grid-area:2/10/3/13]",
-      icon: <IconApiApp className="h-6 w-6 text-accent-blue" />,
-      title: "API Integration",
+      icon: <IconBrandThreejs className="h-6 w-6 text-accent-cyan" />,
+      title: "Satisfaction Guaranteed",
       description:
-        "Seamless integration with REST APIs, GraphQL, and third-party services.",
+        "Your satisfaction is our priority. We stand behind our work and ensure you're completely happy with the results.",
     },
   ];
 
   return (
     <section
-      id="skills"
+      id="features"
       className="relative min-h-screen w-full py-32 md:py-48 bg-black"
     >
       <div className="swiss-container relative z-10">
@@ -122,27 +122,27 @@ export function SkillsSection() {
         <div className="mb-16 md:mb-24">
           <div>
             <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
-              Expertise
+              Why Choose Us
             </span>
             <h2 className="font-harmond text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
-              Skills & Services
+              Our Services
             </h2>
             <p className="font-nohemi text-lg text-white/50 max-w-xl">
-              A comprehensive skill set refined through years of building
-              digital products for startups and enterprises alike.
+              Experience premium mobile car detailing with convenience, quality,
+              and care that sets us apart.
             </p>
           </div>
         </div>
 
-        {/* Skills grid */}
+        {/* Services grid */}
         <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[36rem] xl:grid-rows-2">
-          {skills.map((skill) => (
+          {services.map((service) => (
             <SkillCard
-              key={skill.title}
-              area={skill.area}
-              icon={skill.icon}
-              title={skill.title}
-              description={skill.description}
+              key={service.title}
+              area={service.area}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
             />
           ))}
         </ul>

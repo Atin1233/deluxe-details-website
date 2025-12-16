@@ -24,23 +24,22 @@ const nohemi = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Creative Developer | Digital Noir Portfolio",
+  title: "Deluxe Details | Premium Mobile Car Detailing | Central New Jersey",
   description:
-    "Award-winning creative developer specializing in interactive digital experiences, high-end UI, and 3D web development.",
+    "We bring the shine to you. Premium mobile car detailing services in Central New Jersey. Full Detail, Exterior, Interior, and Extras available.",
   keywords: [
-    "Creative Developer",
-    "Web Developer",
-    "UI/UX",
-    "Three.js",
-    "React",
-    "Next.js",
-    "Portfolio",
+    "Mobile Car Detailing",
+    "Car Detailing",
+    "Auto Detailing",
+    "Central New Jersey",
+    "Premium Detailing",
+    "Mobile Detailing Service",
   ],
-  authors: [{ name: "Creative Developer" }],
+  authors: [{ name: "Deluxe Details" }],
   openGraph: {
-    title: "Creative Developer | Digital Noir Portfolio",
+    title: "Deluxe Details | Premium Mobile Car Detailing",
     description:
-      "Award-winning creative developer specializing in interactive digital experiences.",
+      "We bring the shine to you. Serving Central New Jersey with premium mobile car detailing services.",
     type: "website",
   },
 };

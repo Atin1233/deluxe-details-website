@@ -10,7 +10,8 @@
   --color-black: #000000;
   --color-black-50: #050505;
   --color-white: #ffffff;
-  --color-accent-blue: #3b82f6;
+  --color-accent-blue: #0066ff;
+  --color-accent-cyan: #00d4ff;
   --color-accent-orange: #ff6b35;
   --color-silver: #c0c0c0;
   
@@ -180,7 +181,7 @@ html.lenis body {
 }
 
 .glow-accent {
-  box-shadow: 0 0 60px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 60px rgba(0, 102, 255, 0.4), 0 0 120px rgba(0, 212, 255, 0.2);
 }
 
 /* ============================================

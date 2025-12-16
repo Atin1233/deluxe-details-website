@@ -144,13 +144,6 @@ const CornerBrackets = memo(function CornerBrackets() {
 });
 
 export function HeroSection() {
-  const words = [
-    "Digital Experiences",
-    "Interactive Worlds", 
-    "High-End UI",
-    "Web Applications",
-  ];
-
   // Simple mount animation state
   const [mounted, setMounted] = useState(false);
   
@@ -166,9 +159,14 @@ export function HeroSection() {
       {/* Corner brackets for Swiss design feel */}
       <CornerBrackets />
 
-      {/* Gradient overlays */}
+      {/* Royal Blue / Cyan Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20 pointer-events-none" />
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-30"
+        style={{
+          background: 'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0, 102, 255, 0.15) 0%, rgba(0, 212, 255, 0.1) 50%, transparent 100%)',
+        }}
+      />
       
       {/* Vignette effect */}
       <div 
@@ -197,39 +195,55 @@ export function HeroSection() {
               transition: 'opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s',
             }}
           >
-            Creative Developer
+            Premium Mobile Car Detailing
           </p>
 
           {/* Main headline */}
           <h1
-            className="font-harmond text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-bold tracking-tight leading-[0.85] text-white"
+            className="font-harmond text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight leading-[0.9] text-white mb-6"
             style={{
               opacity: mounted ? 1 : 0,
               transform: mounted ? 'translateY(0)' : 'translateY(30px)',
               transition: 'opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s',
-              textShadow: '0 0 80px rgba(255,255,255,0.1)',
+              background: 'linear-gradient(135deg, #ffffff 0%, #00d4ff 50%, #0066ff 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              textShadow: '0 0 80px rgba(0, 212, 255, 0.3)',
             }}
           >
-            CRAFTING
+            DELUXE
+            <br />
+            DETAILS
           </h1>
 
-          {/* Flip words line */}
+          {/* Slogan */}
           <div
-            className="flex flex-wrap items-center justify-center gap-2 mt-4 md:mt-6"
+            className="flex flex-col items-center gap-4 mt-4 md:mt-6"
             style={{
               opacity: mounted ? 1 : 0,
               transform: mounted ? 'translateY(0)' : 'translateY(30px)',
               transition: 'opacity 0.8s ease-out 0.5s, transform 0.8s ease-out 0.5s',
             }}
           >
-            <span className="font-nohemi text-xl md:text-3xl lg:text-4xl text-white/70">
-              I build
-            </span>
-            <FlipWords
-              words={words}
-              className="font-nohemi text-xl md:text-3xl lg:text-4xl font-semibold"
-              duration={3000}
-            />
+            <p className="font-nohemi text-xl md:text-2xl lg:text-3xl text-white/80 font-medium">
+              We bring the shine to you.
+            </p>
+            <p className="font-nohemi text-base md:text-lg text-white/60">
+              Serving Central New Jersey
+            </p>
+            
+            {/* Phone CTA */}
+            <a
+              href="tel:+17326770331"
+              className="mt-6 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-nohemi text-lg font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,102,255,0.5)] hover:scale-105"
+              data-cursor-hover
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              (732) 677-0331
+            </a>
           </div>
         </div>
       </div>
