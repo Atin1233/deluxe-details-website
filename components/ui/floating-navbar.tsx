@@ -99,11 +99,12 @@ export const FloatingNav = ({
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "fixed top-6 right-6 z-[6000] w-14 h-14",
+          "fixed top-4 right-4 sm:top-6 sm:right-6 z-[6000]",
+          "w-12 h-12 sm:w-14 sm:h-14",
           "flex flex-col items-center justify-center gap-1.5",
           "bg-black/60 backdrop-blur-xl border border-white/10 rounded-full",
           "transition-all duration-300 hover:bg-black/80 hover:border-accent-cyan/50",
-          "group"
+          "group touch-manipulation"
         )}
         aria-label="Toggle navigation"
       >
@@ -131,10 +132,10 @@ export const FloatingNav = ({
       <nav
         ref={navRef}
         className={cn(
-          "fixed top-0 right-0 h-full w-80 md:w-96 z-[5000]",
+          "fixed top-0 right-0 h-full w-full sm:w-80 md:w-96 z-[5000]",
           "bg-black/95 backdrop-blur-2xl border-l border-white/10",
           "transition-transform duration-500 ease-out-expo",
-          "overflow-y-auto",
+          "overflow-y-auto overscroll-contain",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -148,7 +149,7 @@ export const FloatingNav = ({
 
         <div className="relative z-10 flex flex-col h-full">
           {/* Logo Section */}
-          <div className="p-8 border-b border-white/10">
+          <div className="p-6 sm:p-8 border-b border-white/10">
             <a
               href="#"
               onClick={(e) => scrollToSection(e, "#")}
@@ -159,20 +160,20 @@ export const FloatingNav = ({
           </div>
 
           {/* Navigation Items */}
-          <div className="flex-1 px-8 py-12 space-y-2">
+          <div className="flex-1 px-4 sm:px-8 py-8 sm:py-12 space-y-2">
             {navItems.map((navItem, idx) => (
               <a
                 key={`link-${idx}`}
                 href={navItem.link}
                 onClick={(e) => scrollToSection(e, navItem.link)}
                 className={cn(
-                  "block px-6 py-4 rounded-xl",
-                  "font-nohemi text-lg font-medium uppercase tracking-wider",
-                  "text-white/60 hover:text-white",
+                  "block px-4 sm:px-6 py-3 sm:py-4 rounded-xl",
+                  "font-nohemi text-base sm:text-lg font-medium uppercase tracking-wider",
+                  "text-white/60 hover:text-white active:text-white",
                   "bg-white/5 hover:bg-gradient-to-r hover:from-accent-blue/20 hover:to-accent-cyan/20",
                   "border border-white/5 hover:border-accent-cyan/30",
                   "transition-all duration-300",
-                  "group relative overflow-hidden"
+                  "group relative overflow-hidden touch-manipulation"
                 )}
                 style={{
                   animationDelay: `${idx * 50}ms`,
@@ -188,7 +189,7 @@ export const FloatingNav = ({
           </div>
 
           {/* CTA Button */}
-          <div className="p-8 border-t border-white/10">
+          <div className="p-4 sm:p-8 border-t border-white/10">
             <MagneticButton
               as="a"
               href="tel:+17326770331"
@@ -196,11 +197,11 @@ export const FloatingNav = ({
               className="w-full"
             >
               <span className={cn(
-                "w-full px-6 py-4 rounded-xl block text-center",
+                "w-full px-4 sm:px-6 py-3 sm:py-4 rounded-xl block text-center",
                 "bg-gradient-to-r from-accent-blue to-accent-cyan text-white",
-                "font-nohemi text-base font-semibold uppercase tracking-wide",
+                "font-nohemi text-sm sm:text-base font-semibold uppercase tracking-wide",
                 "hover:shadow-[0_0_30px_rgba(0,212,255,0.5)] transition-all duration-300",
-                "flex items-center justify-center gap-2"
+                "flex items-center justify-center gap-2 touch-manipulation"
               )}>
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

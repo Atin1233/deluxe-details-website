@@ -117,25 +117,25 @@ const CornerBrackets = memo(function CornerBrackets() {
   return (
     <>
       {/* Top left bracket */}
-      <div className="absolute top-8 left-8 md:top-16 md:left-16 w-16 h-16 md:w-24 md:h-24">
+      <div className="absolute top-4 left-4 sm:top-8 sm:left-8 md:top-16 md:left-16 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24">
         <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-white/30 to-transparent" />
         <div className="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-b from-white/30 to-transparent" />
       </div>
       
       {/* Top right bracket */}
-      <div className="absolute top-8 right-8 md:top-16 md:right-16 w-16 h-16 md:w-24 md:h-24">
+      <div className="absolute top-4 right-4 sm:top-8 sm:right-8 md:top-16 md:right-16 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24">
         <div className="absolute top-0 right-0 w-full h-[2px] bg-gradient-to-l from-white/30 to-transparent" />
         <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-white/30 to-transparent" />
       </div>
       
       {/* Bottom left bracket */}
-      <div className="absolute bottom-8 left-8 md:bottom-16 md:left-16 w-16 h-16 md:w-24 md:h-24">
+      <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 md:bottom-16 md:left-16 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24">
         <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-white/30 to-transparent" />
         <div className="absolute bottom-0 left-0 w-[2px] h-full bg-gradient-to-t from-white/30 to-transparent" />
       </div>
       
       {/* Bottom right bracket */}
-      <div className="absolute bottom-8 right-8 md:bottom-16 md:right-16 w-16 h-16 md:w-24 md:h-24">
+      <div className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 md:bottom-16 md:right-16 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24">
         <div className="absolute bottom-0 right-0 w-full h-[2px] bg-gradient-to-l from-white/30 to-transparent" />
         <div className="absolute bottom-0 right-0 w-[2px] h-full bg-gradient-to-t from-white/30 to-transparent" />
       </div>
@@ -236,10 +236,10 @@ export function HeroSection() {
             {/* Phone CTA */}
             <a
               href="tel:+17326770331"
-              className="mt-6 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-nohemi text-lg font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,102,255,0.5)] hover:scale-105"
+              className="mt-4 sm:mt-6 inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-nohemi text-base sm:text-lg font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,102,255,0.5)] hover:scale-105 active:scale-95 touch-manipulation"
               data-cursor-hover
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               (732) 677-0331

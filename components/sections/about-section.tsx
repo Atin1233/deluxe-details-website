@@ -48,7 +48,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative min-h-screen w-full py-32 md:py-48 bg-black"
+      className="relative min-h-screen w-full py-20 sm:py-32 md:py-48 bg-black"
     >
       {/* Grid background */}
       <div className="absolute inset-0 bg-grid-white opacity-[0.02]" />
@@ -76,7 +76,7 @@ export function AboutSection() {
             </h2>
 
             {/* Bio paragraphs */}
-            <div className="space-y-6 font-nohemi text-lg md:text-xl leading-relaxed text-white/60 max-w-3xl">
+            <div className="space-y-4 sm:space-y-6 font-nohemi text-base sm:text-lg md:text-xl leading-relaxed text-white/60 max-w-3xl">
               <p>
                 At <GlowText className="text-white">Deluxe Details</GlowText>, we bring
                 professional car detailing services directly to your location in Central New Jersey.
@@ -121,7 +121,7 @@ export function AboutSection() {
             </div>
 
             {/* Stats */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
               {[
                 { value: "100%", label: "Satisfaction" },
                 { value: "Mobile", label: "Service" },

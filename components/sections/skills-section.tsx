@@ -115,19 +115,19 @@ export function SkillsSection() {
   return (
     <section
       id="features"
-      className="relative min-h-screen w-full py-32 md:py-48 bg-black"
+      className="relative min-h-screen w-full py-20 sm:py-32 md:py-48 bg-black"
     >
       <div className="swiss-container relative z-10">
         {/* Section header */}
-        <div className="mb-16 md:mb-24">
+        <div className="mb-12 sm:mb-16 md:mb-24">
           <div>
             <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
               Why Choose Us
             </span>
-            <h2 className="font-harmond text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
+            <h2 className="font-harmond text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-6">
               Our Services
             </h2>
-            <p className="font-nohemi text-lg text-white/50 max-w-xl">
+            <p className="font-nohemi text-base sm:text-lg text-white/50 max-w-xl">
               Experience premium mobile car detailing with convenience, quality,
               and care that sets us apart.
             </p>

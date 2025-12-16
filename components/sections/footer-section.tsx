@@ -165,15 +165,15 @@ export function FooterSection() {
         }}
       />
 
-      <div className="swiss-container relative z-10 py-20 md:py-32">
-        <div className="flex flex-col items-center justify-center text-center w-full">
+      <div className="swiss-container relative z-10 py-16 sm:py-20 md:py-32">
+        <div className="flex flex-col items-center justify-center text-center w-full px-4">
           {/* Section label */}
-          <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 mb-8">
+          <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 mb-6 sm:mb-8">
             Let&apos;s Connect
           </span>
 
           {/* Big CTA headline - Massive Harmond Typography */}
-          <h2 className="font-harmond text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[12vw] font-bold tracking-tight text-white leading-[0.8] mb-8"
+          <h2 className="font-harmond text-[18vw] sm:text-[15vw] md:text-[12vw] lg:text-[10vw] xl:text-[12vw] font-bold tracking-tight text-white leading-[0.8] mb-6 sm:mb-8"
             style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #00d4ff 50%, #0066ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -188,7 +188,7 @@ export function FooterSection() {
           </h2>
 
           {/* Subtext */}
-          <p className="font-nohemi text-lg md:text-xl text-white/50 max-w-lg mb-12">
+          <p className="font-nohemi text-base sm:text-lg md:text-xl text-white/50 max-w-lg mb-8 sm:mb-12 px-4">
             Ready to give your vehicle the premium treatment it deserves?
             Contact us today to schedule your mobile detailing service.
           </p>
@@ -201,10 +201,10 @@ export function FooterSection() {
             className="group"
           >
             <span className={cn(
-              "inline-flex items-center gap-3 px-8 py-4 rounded-full",
-              "bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-nohemi text-base font-semibold uppercase tracking-wide",
-              "transition-all duration-300",
-              "group-hover:shadow-[0_0_40px_rgba(0,212,255,0.5)] group-hover:scale-105"
+              "inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full",
+              "bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-nohemi text-sm sm:text-base font-semibold uppercase tracking-wide",
+              "transition-all duration-300 touch-manipulation",
+              "group-hover:shadow-[0_0_40px_rgba(0,212,255,0.5)] group-hover:scale-105 active:scale-95"
             )}>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -222,7 +222,7 @@ export function FooterSection() {
           </div>
 
           {/* Social links with magnetic effect */}
-          <div className="mt-16 flex items-center gap-6 flex-wrap justify-center">
+          <div className="mt-12 sm:mt-16 flex items-center gap-4 sm:gap-6 flex-wrap justify-center px-4">
             <MagneticButton
               as="a"
               href="https://www.instagram.com/deluxe._.details"

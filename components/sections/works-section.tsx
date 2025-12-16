@@ -16,12 +16,12 @@ interface ServicePackage {
 const ServiceCard = ({ package: pkg, index }: { package: ServicePackage; index: number }) => {
   return (
     <div
-      className={cn(
-        "relative rounded-2xl md:rounded-3xl border p-6 md:p-8 bg-black-50 min-h-[400px] flex flex-col",
-        pkg.popular
-          ? "border-accent-cyan/50 bg-gradient-to-br from-accent-blue/10 to-accent-cyan/5"
-          : "border-white/10 bg-gradient-to-br from-white/[0.03] to-transparent"
-      )}
+        className={cn(
+          "relative rounded-2xl md:rounded-3xl border p-4 sm:p-6 md:p-8 bg-black-50 min-h-[350px] sm:min-h-[400px] flex flex-col",
+          pkg.popular
+            ? "border-accent-cyan/50 bg-gradient-to-br from-accent-blue/10 to-accent-cyan/5"
+            : "border-white/10 bg-gradient-to-br from-white/[0.03] to-transparent"
+        )}
     >
       {/* Glowing border gradient effect */}
       <GlowingEffect
@@ -42,14 +42,14 @@ const ServiceCard = ({ package: pkg, index }: { package: ServicePackage; index: 
 
       <div className="flex-1 flex flex-col">
         {/* Title */}
-        <h3 className="font-harmond text-2xl md:text-3xl font-bold text-white mb-2">
+        <h3 className="font-harmond text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">
           {pkg.title}
         </h3>
 
         {/* Price */}
         <div className="mb-4">
           <span
-            className="font-harmond text-4xl md:text-5xl font-bold"
+            className="font-harmond text-3xl sm:text-4xl md:text-5xl font-bold"
             style={{
               background: pkg.popular
                 ? 'linear-gradient(135deg, #00d4ff 0%, #0066ff 100%)'
@@ -64,7 +64,7 @@ const ServiceCard = ({ package: pkg, index }: { package: ServicePackage; index: 
         </div>
 
         {/* Description */}
-        <p className="font-nohemi text-base text-white/60 mb-6">
+        <p className="font-nohemi text-sm sm:text-base text-white/60 mb-4 sm:mb-6">
           {pkg.description}
         </p>
 
@@ -86,7 +86,7 @@ const ServiceCard = ({ package: pkg, index }: { package: ServicePackage; index: 
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="font-nohemi text-sm text-white/70">{feature}</span>
+                <span className="font-nohemi text-xs sm:text-sm text-white/70">{feature}</span>
               </li>
             ))}
           </ul>
@@ -96,7 +96,7 @@ const ServiceCard = ({ package: pkg, index }: { package: ServicePackage; index: 
         <a
           href={`tel:+17326770331`}
           className={cn(
-            "mt-6 w-full text-center px-6 py-3 rounded-full font-nohemi text-sm font-semibold uppercase tracking-wide transition-all duration-300",
+            "mt-4 sm:mt-6 w-full text-center px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-nohemi text-xs sm:text-sm font-semibold uppercase tracking-wide transition-all duration-300 touch-manipulation active:scale-95",
             pkg.popular
               ? "bg-gradient-to-r from-accent-blue to-accent-cyan text-white hover:shadow-[0_0_30px_rgba(0,212,255,0.5)]"
               : "bg-white/10 text-white border border-white/20 hover:bg-white/20 hover:border-white/40"
@@ -173,7 +173,7 @@ export function WorksSection() {
   return (
     <section
       id="services"
-      className="relative min-h-screen w-full py-32 md:py-48 bg-black"
+      className="relative min-h-screen w-full py-20 sm:py-32 md:py-48 bg-black"
     >
       {/* Royal Blue / Cyan gradient */}
       <div 
@@ -185,29 +185,29 @@ export function WorksSection() {
 
       <div className="swiss-container relative z-10">
         {/* Section header */}
-        <div className="mb-16 md:mb-24">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div className="mb-12 sm:mb-16 md:mb-24">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 sm:gap-6">
             <div>
               <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
                 Service Packages
               </span>
-              <h2 className="font-harmond text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
+              <h2 className="font-harmond text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
                 Pricing
               </h2>
             </div>
 
-            <p className="font-nohemi text-base md:text-lg text-white/50 max-w-md">
+            <p className="font-nohemi text-sm sm:text-base md:text-lg text-white/50 max-w-md">
               Choose the perfect package for your vehicle. All services include
               mobile convenience—we come to you!
             </p>
           </div>
 
           {/* Divider */}
-          <div className="mt-8 h-px bg-gradient-to-r from-accent-blue/50 via-accent-cyan/30 to-transparent" />
+          <div className="mt-6 sm:mt-8 h-px bg-gradient-to-r from-accent-blue/50 via-accent-cyan/30 to-transparent" />
         </div>
 
         {/* Service Packages Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-4 sm:gap-6">
           {packages.map((pkg, index) => (
             <div key={pkg.title} className={cn("col-span-1", pkg.area)}>
               <ServiceCard package={pkg} index={index} />
@@ -216,13 +216,13 @@ export function WorksSection() {
         </div>
 
         {/* Call to action */}
-        <div className="mt-16 flex flex-col items-center justify-center text-center">
-          <p className="font-nohemi text-base text-white/60 mb-6">
+        <div className="mt-12 sm:mt-16 flex flex-col items-center justify-center text-center px-4">
+          <p className="font-nohemi text-sm sm:text-base text-white/60 mb-4 sm:mb-6">
             Questions about our services? Call us now!
           </p>
           <a
             href="tel:+17326770331"
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-nohemi text-base font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,212,255,0.5)] hover:scale-105"
+            className="group inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-nohemi text-sm sm:text-base font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,212,255,0.5)] hover:scale-105 active:scale-95 touch-manipulation"
             data-cursor-hover
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
