@@ -9,6 +9,8 @@ interface MagneticButtonProps {
   strength?: number;
   as?: "button" | "a" | "div";
   href?: string;
+  target?: string;
+  rel?: string;
   onClick?: (e: React.MouseEvent<HTMLElement | Element>) => void;
 }
 
@@ -18,6 +20,8 @@ export const MagneticButton = memo(function MagneticButton({
   strength = 0.3,
   as: Component = "button",
   href,
+  target,
+  rel,
   onClick,
   ...props
 }: MagneticButtonProps & React.HTMLAttributes<HTMLElement>) {
@@ -61,7 +65,7 @@ export const MagneticButton = memo(function MagneticButton({
     onClick,
     style,
     "data-cursor-hover": true,
-    ...(Component === "a" && href ? { href } : {}),
+    ...(Component === "a" && href ? { href, target, rel } : {}),
     ...props,
   };
 
